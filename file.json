@@ -1,0 +1,17 @@
+{
+    "students": [
+        "Aria",
+        "Rajesh",
+        "Vimal"
+    ],
+    "marks": [
+        78,
+        83,
+        92
+    ],
+    "subject": [
+        "Maths",
+        "Science",
+        "English"
+    ]
+}
