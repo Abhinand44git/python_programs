@@ -161,5 +161,52 @@ for num in numbers_list:
         smallest_num=num
 print("Largest Number in the list is: ",largest_num)
 print("Smallest Number in the list is: ",smallest_num)
-'''
+
 # seperate positive and negative number from list
+
+numbers_list=[]
+number_of_items=int(input("Enter the number of elements to be inserted"))
+
+count=0
+numbers=tuple(map(int,input("Enter the numbers to be inserted: ").split()))
+number=int(input("Enter the number to count: "))
+for items in numbers:
+    if items == number:
+        count+=1
+print("Tuple elements are: ",numbers)
+print(f"Occurence of {number} in tuple is {count}")
+
+combination=tuple(map(int,input("Enter the numbers to be inserted: ").split()))
+number=int(input("Enter the Target sum: "))
+for items in combination:
+    for element in combination:
+        if items+element==number:
+            combines=(items,element)
+    if items==number/2+1:
+        break
+    print(combines)
+
+
+data={"a":1,"b":2,"c":3}
+reversed_data={}
+while data:
+    key,value = data.popitem()
+    reversed_data[key]= value
+print(reversed_data)
+
+data={"a":1,"b":2,"c":3}
+reversed_data={}
+keys=list(data.keys())
+for key in keys[::-1]:
+    reversed_data[key]=data[key]
+print(reversed_data)
+'''
+print("Linear Search")
+user_marks=list(map(int,input("Enter the Elements To be Inserted: ").split()))
+search_element=int(input("Enter the Element of Search: "))
+for i in range(len(user_marks)):
+    if user_marks[i]==search_element:
+        print(f"Element found at position {i+1}")
+        break
+else:
+    print("Element not found")
