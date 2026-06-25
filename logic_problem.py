@@ -200,7 +200,7 @@ keys=list(data.keys())
 for key in keys[::-1]:
     reversed_data[key]=data[key]
 print(reversed_data)
-'''
+
 print("Linear Search")
 user_marks=list(map(int,input("Enter the Elements To be Inserted: ").split()))
 search_element=int(input("Enter the Element of Search: "))
@@ -210,3 +210,40 @@ for i in range(len(user_marks)):
         break
 else:
     print("Element not found")
+'''
+#bubble sort
+'''
+# first iteration
+13 89 75 10 51
+13>89 no
+13 89 75 10 51
+13>75 no
+13 89 75 10 51
+13>10
+10 89 75 13 51
+10>89
+10 89 75 13 51
+10>75
+10 89 75 13 51
+10>13
+10 89 75 13 51
+10>51
+# second iteration
+89>75
+10 75 89 13 51
+75>13
+10 13 89 75 51
+10
+'''
+def bubble_sort(num):
+    n=len(num)
+    for i in range(n):
+        for j in range(i+1,n):
+            if num[i]>num[j]:
+                temp=num[i]
+                num[i]=num[j]
+                num[j]=temp
+    return num
+number_group=list(map(int,input("Enter list of elements to be sorted: ").split()))
+sorted_list=bubble_sort(number_group)
+print(sorted_list)

@@ -91,7 +91,7 @@ try:
     from math import square
 except (ValueError, ImportError) as e:
     print(e)
-'''
+
 numerator=int(input("Enter the numerator: "))
 denominator=int(input("Enter the denominator: "))
 try:
@@ -101,3 +101,4 @@ except ZeroDivisionError as z:
     print(z)
 finally:
     print("Executed Normally")
+'''
